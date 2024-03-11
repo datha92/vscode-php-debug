@@ -18,6 +18,8 @@ export class InitPacket {
     engineVersion: string
     /** the name of the engine */
     engineName: string
+    /** the app id (PID) */
+    appId: string
     /**
      * @param  {XMLDocument} document - An XML document to read from
      * @param  {Connection} connection
@@ -30,6 +32,7 @@ export class InitPacket {
         this.ideKey = documentElement.getAttribute('idekey')!
         this.engineVersion = documentElement.getElementsByTagName('engine').item(0)?.getAttribute('version') ?? ''
         this.engineName = documentElement.getElementsByTagName('engine').item(0)?.textContent ?? ''
+        this.appId = documentElement.getAttribute('appid') ?? ''
         this.connection = connection
     }
 }

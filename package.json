@@ -46,6 +46,7 @@
     "@vscode/debugadapter": "^1.57.0",
     "@vscode/debugprotocol": "^1.55.1",
     "@xmldom/xmldom": "^0.8.4",
+    "abstract-socket": "^2.1.1",
     "buffer-crc32": "^0.2.13",
     "dotenv": "^16.0.3",
     "file-url": "^3.0.0",
